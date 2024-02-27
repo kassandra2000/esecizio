@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sviluppo di una pagina web - Blog Epicode</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Primi passi operativi per creare un modello di pagina html per un post. Scopri come iniziare in modo facile."
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="header">
+        <a class="logo" href="/index.html"
+          ><img
+            class="img-epicode"
+            src="assets/img/logo.png"
+            alt="logo epicode"
+        /></a>
+        <input id="menu-btn" class="menu-btn" type="checkbox" />
+        <label for="menu-btn" class="menu-icon">
+          <span class="nav-icon"></span>
+        </label>
+
+        <ul class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Articoli</a></li>
+          <li><a href="/">Lavora con noi</a></li>
+          <li><a href="/">Contatti</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="first">
+        <h1>
+          Come creare un template per i post di Mario Rossi- pubblicato il
+          25-10-2020
+        </h1>
+      </section>
+
+      <section class="second">
+        <p>
+          La prima cosa da fare è suddividere in blocchi la pagina,
+          identificando le parti comuni da applicare a tutte le pagine
+        </p>
+
+        <p>le varie aree saranno quindi suddivise in:</p>
+        <ul>
+          <li>Contenuti di intestazione dei tag &ltHeader></li>
+          <li>Contenuti centrali variabili del tag &ltMain></li>
+          <li>
+            Contenuti di fine pagina comuni, da inserire nel tag &ltfooter>
+          </li>
+        </ul>
+
+        <h2>formattazione del codice</h2>
+
+        <p>
+          Il testo dell'articolo dovrà essere formattato per identificare tutte
+          le parti da selezionare con i css. Perciò i passi saranno:
+        </p>
+        <ol>
+          <li>
+            Progettare il markup assegnato ad ogni specifico testo il tag
+            appropriato
+          </li>
+          <li>
+            Scrivere l'HTMl dei tag esterni a quelli interni e dall'alto verso
+            il basso
+          </li>
+          <li>Applicare gli stili CSS</li>
+        </ol>
+
+        <p>
+          L'applicazione di stili CSS è cresciuta negli anni fino a raggiungee
+          la diffusione pressocchè totale.
+        </p>
+      </section>
+
+      <section class="table">
+        <table>
+          <caption>
+            Diffusione dei CSS
+          </caption>
+
+          <thead>
+            <tr>
+              <th style="background-color: rgb(115, 114, 156)" class="no-bold">
+                Anno
+              </th>
+              <th style="background-color: rgb(115, 114, 156)" class="no-bold">
+                % di utilizzo
+              </th>
+              <th style="background-color: rgb(115, 114, 156)" class="no-bold">
+                Supporto brosers
+              </th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td style="background-color: rgb(230, 155, 155)">2000</td>
+              <td style="background-color: rgb(230, 155, 155)">20%</td>
+              <td style="background-color: rgb(230, 155, 155)">17%</td>
+            </tr>
+
+            <tr>
+              <td style="background-color: antiquewhite" class="no-bold">
+                2002
+              </td>
+              <td style="background-color: antiquewhite" class="no-bold">
+                35%
+              </td>
+              <td style="background-color: antiquewhite" class="no-bold">
+                22%
+              </td>
+            </tr>
+
+            <tr>
+              <td style="background-color: rgb(179, 157, 161)" class="no-bold">
+                2004
+              </td>
+              <td style="background-color: rgb(179, 157, 161)" class="no-bold">
+                45%
+              </td>
+              <td style="background-color: rgb(179, 157, 161)" class="no-bold">
+                42%
+              </td>
+            </tr>
+
+            <tr>
+              <td style="background-color: rgb(179, 179, 255)" class="no-bold">
+                2008
+              </td>
+              <td style="background-color: rgb(179, 179, 255)" class="no-bold">
+                80%
+              </td>
+              <td style="background-color: rgb(179, 179, 255)" class="no-bold">
+                51%
+              </td>
+            </tr>
+
+            <tr>
+              <td style="background-color: rgb(234, 162, 236)" class="no-bold">
+                2012
+              </td>
+              <td style="background-color: rgb(234, 162, 236)" class="no-bold">
+                100%
+              </td>
+              <td style="background-color: rgb(234, 162, 236)" class="no-bold">
+                76%
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="four">
+        <p>
+          Un test di validazione potrà essere fatto tramite il tool online
+          <span><a href="#">LINK ESTERNO</a></span> dedicato allo scopo. Una
+          volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed
+          essere stati dei veri developers come loro:
+        </p>
+
+        <div class="iframe">
+          <iframe
+            width="270"
+            height="200"
+            src="https://www.youtube.com/embed/aBSZVeBRvDY?si=hkGHPqNJ6HwCliJq"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <aside>
+        <h5>
+          vuoi rimanere aggiornato su altre novità dei blog? Iscriviti alla
+          nostra newsletter:
+        </h5>
+        <form class="email">
+          <label for="email">Inserisci l'email</label>
+          <input
+            type="email"
+            placeholder="MarioRossi@gmail.com"
+            required
+            id="email"
+          />
+          <div class="button">
+            <button id="email">iscriviti</button>
+          </div>
+        </form>
+      </aside>
+    </main>
+
+    <footer>
+      <h4 class="h4">Artcoli correlati</h4>
+
+      <div class="footer">
+        <div>
+          <ul>
+            <li>Validare il codice HTML</li>
+            <li>Categoria: develop</li>
+            <li>Data: 18-09-2020</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Correggere la sintassi</li>
+            <li>Categoria: develop</li>
+            <li>Data: 16-09-2020</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Meno Kb nella pagina</li>
+            <li>Categoria: ottimizzazione</li>
+            <li>Data: 30/09-2020</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="p">
+        <p>Blog Epicode ©2023</p>
+        <p>
+          Testata online di Mario Rossi, registrata con prot. n.213/2018 - via
+          Luigi Einaudi 2 - Milano. P.IVA 00112233.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
